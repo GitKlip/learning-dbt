@@ -66,3 +66,15 @@
 2022-04-22 16:20:26.325288 (Thread-15): handling status request
 2022-04-22 16:20:26.326661 (Thread-15): 16:20:26  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'ea280173-d53b-4efe-968d-14505b4fc3eb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbe742fbb20>]}
 2022-04-22 16:20:26.327539 (Thread-15): sending response (<Response 15565 bytes [200 OK]>) to 10.0.3.187
+2022-04-22 16:20:28.429095 (Thread-16): 16:20:28  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-04-22 16:20:28.429286 (Thread-16): 16:20:28  Partial parsing enabled, no changes found, skipping parsing
+2022-04-22 16:20:28.434004 (Thread-16): 16:20:28  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ea280173-d53b-4efe-968d-14505b4fc3eb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbe74243d90>]}
+2022-04-22 16:20:29.088034 (Thread-17): handling status request
+2022-04-22 16:20:29.088399 (Thread-17): 16:20:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'ea280173-d53b-4efe-968d-14505b4fc3eb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbe7427d250>]}
+2022-04-22 16:20:29.088837 (Thread-17): sending response (<Response 1241 bytes [200 OK]>) to 10.0.3.187
+2022-04-22 16:20:29.097891 (Thread-18): handling status request
+2022-04-22 16:20:29.098113 (Thread-18): 16:20:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'ea280173-d53b-4efe-968d-14505b4fc3eb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbe7427d0a0>]}
+2022-04-22 16:20:29.098452 (Thread-18): sending response (<Response 1241 bytes [200 OK]>) to 10.0.3.187
+2022-04-22 16:20:56.264974 (Thread-19): handling status request
+2022-04-22 16:20:56.266515 (Thread-19): 16:20:56  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'ea280173-d53b-4efe-968d-14505b4fc3eb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbe74238f40>]}
+2022-04-22 16:20:56.267036 (Thread-19): sending response (<Response 1241 bytes [200 OK]>) to 10.0.3.187
