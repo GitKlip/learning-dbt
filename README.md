@@ -3,6 +3,8 @@
 
 starting with this course: https://courses.getdbt.com/courses/fundamentals
 
+## Data Setup
+
 I'm starting using snowflake as the backend (temporary free trial) with the option to switch to bigquery (always free) later if needed
 * Snowflake
   ```sql
@@ -121,3 +123,6 @@ In working on this project, we established some conventions for naming our model
 * Dimension (dim) refers to data that represents a person, place or thing. Examples include customers, products, candidates, buildings, employees.
 Note: The Fact and Dimension convention is based on previous normalized modeling techniques.
 
+## Folder Structure
+* Marts folder: All intermediate, fact, and dimension models can be stored here. Further subfolders can be used to separate data by business function (e.g. marketing, finance)
+* Staging folder: All staging models and source configurations can be stored here. Further subfolders can be used to separate data by data source (e.g. Stripe, Segment, Salesforce). (We will cover configuring Sources in the Sources module)

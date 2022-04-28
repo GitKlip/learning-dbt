@@ -1,0 +1,29 @@
+version: 2
+
+        # orders.order_id,
+        # orders.customer_id,
+        # orders.order_date,
+        # coalesce(order_payments.amount, 0) as amount
+
+
+models:
+    - name: fct_orders
+      columns:
+        - name: order_id
+          tests:
+            - dbt_expectations.expect_column_values_to_not_be_null
+            - dbt_expectations.expect_column_values_to_be_unique
+        - name: customer_id
+          tests:
+            - dbt_expectations.expect_column_values_to_not_be_null
+        - name: order_date
+          tests:
+            - dbt_expectations.expect_column_values_to_be_of_type:
+                column_type: date
+        - name: amount
+          tests:
+            - dbt_expectations.expect_column_values_to_be_between:
+                min_value: 0
+
+
+    

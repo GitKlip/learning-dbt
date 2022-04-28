@@ -1,0 +1,12 @@
+
+# packages to include in project
+# run 'dbt deps' 
+packages:
+  - package: calogica/dbt_expectations
+    version: [">=0.5.0", "<0.6.0"]
+    # this one is being pulled from dbt hub instead of the raw git repo
+    # <see https://github.com/calogica/dbt-expectations/releases/latest> for the latest version tag
+    # dbt doc page (https://hub.getdbt.com/calogica/dbt_expectations/latest/)
+    # dbt_utils is automatically included with dbt_expectations (https://hub.getdbt.com/dbt-labs/dbt_utils/latest/)
+
+

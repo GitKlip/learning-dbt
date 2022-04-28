@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_payments
+    columns: 
+      - name: id
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_orders')
+              field: order_id
+      - name: status
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['success','fail']
+          - dbt_expectations.expect_column_to_exist
+
